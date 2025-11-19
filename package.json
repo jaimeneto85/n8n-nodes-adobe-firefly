@@ -1,0 +1,44 @@
+{
+  "name": "@jaimeflneto/n8n-nodes-adobe-firefly",
+  "version": "1.0.0",
+  "description": "n8n node for Adobe Firefly API integration",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "jest"
+  },
+  "keywords": [
+    "n8n",
+    "adobe",
+    "firefly",
+    "generative-ai",
+    "text-to-image",
+    "text-to-video"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "n8n-core": "^1.0.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "n8n": {
+    "nodes": [
+      "dist/nodes/AdobeFirefly/AdobeFirefly.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/AdobeFireflyApi.credentials.js"
+    ]
+  }
+}
+

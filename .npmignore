@@ -1,0 +1,15 @@
+src/
+*.test.ts
+*.spec.ts
+coverage/
+node_modules/
+.DS_Store
+.env
+.env.local
+.git
+.gitignore
+.eslintrc.js
+tsconfig.json
+npm-debug.log
+yarn-error.log
+
