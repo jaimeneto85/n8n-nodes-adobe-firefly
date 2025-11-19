@@ -16,7 +16,7 @@ export class AdobeFirefly implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Adobe Firefly',
     name: 'adobeFirefly',
-    icon: 'file:firefly.svg',
+    icon: 'file:firefly-icon.svg',
     group: ['transform'],
     version: 1,
     subtitle: '={{$parameter["operation"]}}',
